@@ -1,10 +1,10 @@
 .root {
     -fx-padding: 20;
-    -fx-background-color: #f4f4f9; /* warna latar terang */
+    -fx-background-color: #002E5D; /* biru gelap */
     -fx-alignment: center;
 }
 
-/* Tombol umum - tetap */
+/* Tombol tetap sama */
 .btn, .btn-delete, .btn-update {
     -fx-background-radius: 8;
     -fx-text-fill: white;
@@ -40,10 +40,19 @@
     -fx-background-color: #1976D2;
 }
 
+.list-view {
+    -fx-background-color: #003366;
+    -fx-control-inner-background: #003366;
+    -fx-text-fill: white;
+    -fx-border-color: #005599;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
 .list-cell {
     -fx-font-size: 16px;
     -fx-padding: 10;
-    -fx-text-fill: #000000;
+    -fx-text-fill: white;
     -fx-background-color: transparent;
 }
 
@@ -51,10 +60,10 @@
     -fx-font-size: 18px;
     -fx-padding: 10px;
     -fx-pref-height: 45px;
-    -fx-background-color: #ffffff;
-    -fx-text-fill: #000000;
-    -fx-prompt-text-fill: #888888;
-    -fx-border-color: #cccccc;
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #CCCCCC;
+    -fx-border-color: #005599;
     -fx-border-radius: 6;
     -fx-background-radius: 6;
 }

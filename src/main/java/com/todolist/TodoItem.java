@@ -1,21 +1,27 @@
 package com.todolist;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 public class TodoItem {
-    private final String task;
-    private boolean isDone;
+    private final StringProperty task = new SimpleStringProperty();
+    private final BooleanProperty isDone = new SimpleBooleanProperty(false);
 
     public TodoItem(String task) {
-        this.task = task;
-        this.isDone = false; // Default status adalah belum selesai
+        this.task.set(task) ;
     }
-    public String getTask() { return task; }
+    public String getTask() { return task.get(); }
+    public void setTask(String value) { task.set(value); }
+    public StringProperty taskProperty() { return task; }
 
-    public boolean isDone() { return isDone;
-    }
-    public void setDone(boolean done) { isDone = done; }
+    public boolean isDone() { return isDone.get(); }
+    public void setDone(boolean value) { isDone.set(value); }
+    public BooleanProperty isDoneProperty() { return isDone; }
 
     @Override
     public String toString() {
-        return task + (isDone ? " (done)" : ""); // Menampilkan status tugas
+        return getTask() + (isDone() ? " (done)" : ""); // Menampilkan status tugas
     }
 }

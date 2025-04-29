@@ -11,6 +11,9 @@
             fx:controller="com.todolist.TodoListController">
             <TextField fx:id="inputField" promptText="Tambakan tugas..." />
             <ListView fx:id="listView" />
+
+            <!-- Tombol mode gelap -->
+            <ToggleButton fx:id="themeToggle" text="Mode Gelap" onAction="#handleToggleTheme" />
             <HBox alignment="CENTER" spacing="10">
                 <Button text="Tambah" onAction="#handleAdd" styleClass="btn" />
                 <Button text="Hapus" onAction="#handleDelete" styleClass="btn-delete" />
