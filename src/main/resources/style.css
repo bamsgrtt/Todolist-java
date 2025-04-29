@@ -1,0 +1,42 @@
+.root {
+    -fx-padding: 20; /* margin pada tepi*/
+    -fx-background-color: #f4f4f9;
+    -fx-alignment: center; /* menyusun semua elemen di tengah */
+}
+
+/* style untuk tombol  */
+.btn .btn-delete .btn-update {
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+/* styling khusus tombol tambah*/
+.btn {
+    -fx-background-color: #4CAF50;
+}
+
+.btn:hover {
+    -fx-background-color: 45a;
+}
+
+.btn-delete {
+    -fx-background-color: #f44336;
+}
+
+.btn-delete:hover {
+    -fx-background-color: #da190b;
+}
+
+.btn-update {
+    -fx-background-color: #2196F3;
+}
+
+.btn-update:hover {
+    -fx-background-color: #1976D2;
+}
+
+.list-cell {
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+}
