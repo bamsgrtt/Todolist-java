@@ -1,0 +1,107 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container utama */
+  .container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+  }
+  
+  /* Judul aplikasi */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Bagian input dan tombol tambah */
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #addButton {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addButton:hover {
+    background: #45a049;
+  }
+  
+  /* Daftar tugas */
+  .todo-list {
+    list-style-type: none;
+  }
+  
+  .todo-item {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Teks tugas */
+  .task-text {
+    flex: 1;
+    color: #333;
+  }
+  
+  /* Tombol aksi (edit, hapus) */
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .actions button i {
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .actions button:hover i {
+    color: #4CAF50;
+  }
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-text {
+    margin-right: 10px;
+}
